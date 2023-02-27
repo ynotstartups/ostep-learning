@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     } else if (rc == 0) {
         close(STDOUT_FILENO);
-        open("./redirect.output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
+        open("./output/redirect.output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
 
         char *myargs[3];
         myargs[0] = "wc";
