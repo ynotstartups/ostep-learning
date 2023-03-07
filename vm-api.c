@@ -35,5 +35,10 @@ int main(int argc, char *argv[]) {
     dst_1 = strdup(src_1);
 
     printf("~~~ %s\n", dst_1);
+
+    char *src_2 = "hello world";
+    printf("~~~~ %p\n", src_2);
+    printf("~~~~ %s\n", src_2);
+
     return 0;
 }
